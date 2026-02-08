@@ -22,8 +22,13 @@
             <div class="container">
                 <nav>
                     <div class="logo"> <img src="/images/logo.png" alt="HamsterDrivers">
-                        <h1>仓鼠驱动管家</h1>
+                        <h1>HamsterDrivers Manager</h1>
                     </div>
+                    <button class="menu-toggle" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                     <div class="nav-links"> <a href="/">首页</a> <a href="/features">功能</a> <a href="/download">下载</a> <a
                             href="/support">支持</a> <a href="https://github.com/Gautown/HamsterDrivers" target="_blank"
                             aria-label="GitHub"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -33,14 +38,21 @@
                                     fill="currentColor"></path>
                                 <path
                                     d="M8.94 16.777C8.732 16.98 8.459 17.064 8.207 17.064C7.955 17.064 7.683 16.98 7.474 16.777C7.266 16.574 7.14 16.294 7.14 16.006C7.14 15.718 7.266 15.438 7.474 15.235C7.683 15.032 7.955 14.948 8.207 14.948C8.459 14.948 8.732 15.032 8.94 15.235C9.148 15.438 9.274 15.718 9.274 16.006C9.274 16.294 9.148 16.574 8.94 16.777Z"
-                                    fill="#fff"></path>
+                                    fill="#E95420"></path>
                                 <path
                                     d="M11.996 19C10.227 19 8.709 18.386 7.443 17.158C6.177 15.93 5.544 14.46 5.544 12.748C5.544 11.036 6.177 9.566 7.443 8.338C8.709 7.11 10.227 6.496 11.996 6.496C13.765 6.496 15.283 7.11 16.549 8.338C17.815 9.566 18.448 11.036 18.448 12.748C18.448 14.46 17.815 15.93 16.549 17.158C15.283 18.386 13.765 19 11.996 19ZM11.996 7.662C10.546 7.662 9.309 8.276 8.285 9.504C7.261 10.732 6.749 12.138 6.749 13.722C6.749 15.306 7.261 16.712 8.285 17.94C9.309 19.168 10.546 19.782 11.996 19.782C13.446 19.782 14.683 19.168 15.707 17.94C16.731 16.712 17.243 15.306 17.243 13.722C17.243 12.138 16.731 10.732 15.707 9.504C14.683 8.276 13.446 7.662 11.996 7.662Z"
-                                    fill="#fff"></path>
+                                    fill="#E95420"></path>
                             </svg> </a> </div>
                 </nav>
             </div>
         </header>
+        <script>
+            // 汉堡菜单点击事件
+            document.querySelector('.menu-toggle').addEventListener('click', function() {
+                this.classList.toggle('active');
+                document.querySelector('.nav-links').classList.toggle('active');
+            });
+        </script>
         <main>
             <div class="container">
                 <div class="hero">
